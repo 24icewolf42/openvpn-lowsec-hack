@@ -1,4 +1,4 @@
-# openvpn-MD5
+# openvpn-lowsec
 Magic environment variables and .so hook to allow week signature digest algorithms in certificates in OpenVPN and OpenSSL 1.1.0+
 
 ## The problem
