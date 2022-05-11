@@ -1,5 +1,5 @@
 # openvpn-MD5
-Magic environment variables and .so hook to allow MD5 certificates in OpenVPN and OpenSSL 1.1.0+ in Linux
+Magic environment variables and .so hook to allow week signature digest algorithms in certificates in OpenVPN and OpenSSL 1.1.0+
 
 ## The problem
 
@@ -40,14 +40,14 @@ The `openvpn_md5_enabler.so` library will hook OpenSSL's context creation functi
 [VPN Connection]
 name=openvpn
 service=org.freedesktop.NetworkManager.openvpn
-<b>program=/usr/libexec/nm-openvpn-service</b>
+<b>program=/usr/lib/NetworkManager/nm-openvpn-service</b>
 supports-multiple-connections=true
 </pre>
 <pre># patched contents
 [VPN Connection]
 name=openvpn
 service=org.freedesktop.NetworkManager.openvpn
-<b>program=/usr/libexec/nm-openvpn-service-with-md5</b>
+<b>program=/usr/lib/NetworkManager/nm-openvpn-service-with-md5</b>
 supports-multiple-connections=true
 </pre>
 </blockquote>

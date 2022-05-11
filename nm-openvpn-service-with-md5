@@ -1,5 +1,5 @@
 #!/bin/sh
 export OPENSSL_ENABLE_MD5_VERIFY=1
-export LD_PRELOAD="/usr/libexec/openvpn_md5_enabler.so"
+export LD_PRELOAD="/usr/lib/NetworkManager/openvpn_md5_enabler.so"
 
-exec /usr/libexec/nm-openvpn-service "$@"
+exec /usr/lib/NetworkManager/nm-openvpn-service "$@"
